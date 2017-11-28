@@ -80,7 +80,7 @@
 		31BA16B45781513457BFB8B4 /* Pods_TVOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ED1C0C7E591FBEA515ED92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		54F114E238385B6BDB61CB26 /* Pods-OSX-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Example/Pods-OSX-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = AmazonS3RequestManager.podspec; path = ../AmazonS3RequestManager.podspec; sourceTree = "<group>"; };
+		5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager-JettF.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = "AmazonS3RequestManager-JettF.podspec"; path = "../AmazonS3RequestManager-JettF.podspec"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager.podspec */,
+				5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager-JettF.podspec */,
 				884ACA65B311A8F4DEF52C37 /* README.md */,
 				42ED1C0C7E591FBEA515ED92 /* LICENSE */,
 			);
