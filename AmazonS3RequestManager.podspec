@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
-s.name = 'AmazonS3RequestManager'
-s.version = '1.2.0'
+s.name = 'AmazonS3RequestManager-JettF'
+s.version = '1.3.0'
 s.license = 'MIT'
 s.summary = 'A Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution). Based on AFAmazonS3Manager'
-s.homepage = 'https://github.com/AnthonyMDev/AmazonS3RequestManager'
+s.homepage = 'https://github.com/JettF/AmazonS3RequestManager-JettF'
 s.social_media_url = 'http://twitter.com/AnthonyMDev'
-s.authors = { 'Anthony Miller' => 'AnthonyMDev@gmail.com' }
-s.source = { :git => 'https://github.com/AnthonyMDev/AmazonS3RequestManager.git', :tag => s.version }
+s.authors = { 'Anthony Miller' => 'AnthonyMDev@gmail.com', 'Jett Farmer' => 'JettFDev@gmail.com' }
+s.source = { :git => 'https://github.com/JettF/AmazonS3RequestManager-JettF.git', :tag => s.version }
 
 s.ios.frameworks = 'MobileCoreServices'
 s.tvos.frameworks = 'MobileCoreServices'
