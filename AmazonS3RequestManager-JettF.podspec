@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'AmazonS3RequestManager-JettF'
+s.module_name = 'AmazonS3RequestManager'
 s.version = '1.3.0'
 s.license = 'MIT'
 s.summary = 'A Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution). Based on AFAmazonS3Manager'
