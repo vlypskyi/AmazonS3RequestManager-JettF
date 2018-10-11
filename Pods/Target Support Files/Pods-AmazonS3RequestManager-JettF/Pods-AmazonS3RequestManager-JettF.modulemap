@@ -1,0 +1,6 @@
+framework module Pods_AmazonS3RequestManager_JettF {
+  umbrella header "Pods-AmazonS3RequestManager-JettF-umbrella.h"
+
+  export *
+  module * { export * }
+}

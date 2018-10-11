@@ -1,0 +1,1535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BA01ADF1DC0931D5DF8432B /* Pods_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7FB9F983BE505B46167557 /* Pods_iOS_Example.framework */; };
+		1DBD2112216F9AA20073AB14 /* AmazonS3RequestManager_JettF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD2110216F9AA10073AB14 /* AmazonS3RequestManager_JettF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DBD2120216FA1070073AB14 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2116216FA1060073AB14 /* ResponseSerialization.swift */; };
+		1DBD2121216FA1070073AB14 /* ACL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2117216FA1060073AB14 /* ACL.swift */; };
+		1DBD2122216FA1070073AB14 /* S3Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2118216FA1060073AB14 /* S3Error.swift */; };
+		1DBD2123216FA1070073AB14 /* AmazonS3RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD2119216FA1060073AB14 /* AmazonS3RequestManager.swift */; };
+		1DBD2125216FA1070073AB14 /* AmazonS3RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD211B216FA1060073AB14 /* AmazonS3RequestSerializer.swift */; };
+		1DBD2126216FA1070073AB14 /* AmazonS3SignatureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD211C216FA1070073AB14 /* AmazonS3SignatureHelpers.m */; };
+		1DBD2128216FA1070073AB14 /* ResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD211E216FA1070073AB14 /* ResponseObjects.swift */; };
+		1DBD2129216FA1070073AB14 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD211F216FA1070073AB14 /* Region.swift */; };
+		1DBD212B216FA7CC0073AB14 /* AmazonS3SignatureHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD212A216FA7CC0073AB14 /* AmazonS3SignatureHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2424D46952F9E5F9CD3982C7 /* Pods_AmazonS3RequestManager_JettF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C7D21640F029D8CBB9403D /* Pods_AmazonS3RequestManager_JettF.framework */; };
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		654CE989194367150525F2B1 /* Pods_TVOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C3DDFC20C2E6C0F26134B4 /* Pods_TVOS_Example.framework */; };
+		720A5C57B07D8886E59746CC /* Pods_OSX_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C86340C59403927DC7596FB /* Pods_OSX_Tests.framework */; };
+		76FE329FEB567CF5FA382043 /* Pods_TVOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6714CB1BBB222508C56BF /* Pods_TVOS_Tests.framework */; };
+		7711F3B40F41CDDF2FCAB186 /* Pods_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA1054E06EA6FE9B902262 /* Pods_iOS_Tests.framework */; };
+		928CAABD1E5CCDFC002D52A1 /* AmazonS3ResponseSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EC1C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift */; };
+		928CAABE1E5CCDFC002D52A1 /* AmazonS3ResponseObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3229E3E1C9D28D500848C84 /* AmazonS3ResponseObjectTests.swift */; };
+		928CAABF1E5CCDFC002D52A1 /* AmazonS3SignatureHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD8F0E1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift */; };
+		928CAAC01E5CCDFC002D52A1 /* AmazonS3ACLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3E91C4EF62400759119 /* AmazonS3ACLTests.swift */; };
+		928CAAC11E5CCDFC002D52A1 /* AmazonS3RequestSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EB1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift */; };
+		928CAAC21E5CCDFC002D52A1 /* AmazonS3RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EA1C4EF62400759119 /* AmazonS3RequestManagerTests.swift */; };
+		928CAAD61E5CCF9B002D52A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CAAD01E5CCF9B002D52A1 /* AppDelegate.swift */; };
+		928CAAD71E5CCF9B002D52A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928CAAD11E5CCF9B002D52A1 /* Assets.xcassets */; };
+		928CAADA1E5CCF9B002D52A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CAAD51E5CCF9B002D52A1 /* ViewController.swift */; };
+		928CAADC1E5CD0B8002D52A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928CAADB1E5CD0B8002D52A1 /* Main.storyboard */; };
+		92A2B7071C51857200CA1967 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2B7061C51857200CA1967 /* Default-568h@2x.png */; };
+		92E8C3ED1C4EF62400759119 /* AmazonS3ACLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3E91C4EF62400759119 /* AmazonS3ACLTests.swift */; };
+		92E8C3EE1C4EF62400759119 /* AmazonS3RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EA1C4EF62400759119 /* AmazonS3RequestManagerTests.swift */; };
+		92E8C3EF1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EB1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift */; };
+		92E8C3F01C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EC1C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift */; };
+		92E8C40E1C4EFAC900759119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C40D1C4EFAC900759119 /* AppDelegate.swift */; };
+		92E8C4101C4EFAC900759119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C40F1C4EFAC900759119 /* ViewController.swift */; };
+		92E8C4121C4EFAC900759119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E8C4111C4EFAC900759119 /* Assets.xcassets */; };
+		92E8C4151C4EFAC900759119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E8C4131C4EFAC900759119 /* Main.storyboard */; };
+		92E8C4371C4EFD4400759119 /* AmazonS3ACLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3E91C4EF62400759119 /* AmazonS3ACLTests.swift */; };
+		92E8C4381C4EFD4600759119 /* AmazonS3RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EA1C4EF62400759119 /* AmazonS3RequestManagerTests.swift */; };
+		92E8C4391C4EFD4800759119 /* AmazonS3RequestSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EB1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift */; };
+		92E8C43A1C4EFD4A00759119 /* AmazonS3ResponseSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8C3EC1C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift */; };
+		A3E421180E366A743FB107EE /* Pods_OSX_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A2AB88B9045E7E739A553 /* Pods_OSX_Example.framework */; };
+		F3229E3F1C9D28D600848C84 /* AmazonS3ResponseObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3229E3E1C9D28D500848C84 /* AmazonS3ResponseObjectTests.swift */; };
+		F3229E401C9D28D600848C84 /* AmazonS3ResponseObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3229E3E1C9D28D500848C84 /* AmazonS3ResponseObjectTests.swift */; };
+		F3DD8F0F1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD8F0E1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift */; };
+		F3DD8F101CBD103C008E8EB4 /* AmazonS3SignatureHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD8F0E1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = AmazonS3RequestManager;
+		};
+		928CAACD1E5CCEEB002D52A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 928CAAA71E5CCDF0002D52A1;
+			remoteInfo = "TVOS-Example";
+		};
+		92E8C4321C4EFC6900759119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E8C40A1C4EFAC800759119;
+			remoteInfo = "OSX-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		086B3919B490BDD32BB55ACD /* Pods-iOS-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Example/Pods-iOS-Example.release.xcconfig"; sourceTree = "<group>"; };
+		1084293B527E120C7F6A4D0B /* Pods-TVOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVOS-Tests/Pods-TVOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DBD210E216F9AA10073AB14 /* AmazonS3RequestManager_JettF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmazonS3RequestManager_JettF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBD2110216F9AA10073AB14 /* AmazonS3RequestManager_JettF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonS3RequestManager_JettF.h; sourceTree = "<group>"; };
+		1DBD2111216F9AA20073AB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBD2116216FA1060073AB14 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		1DBD2117216FA1060073AB14 /* ACL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACL.swift; sourceTree = "<group>"; };
+		1DBD2118216FA1060073AB14 /* S3Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3Error.swift; sourceTree = "<group>"; };
+		1DBD2119216FA1060073AB14 /* AmazonS3RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestManager.swift; sourceTree = "<group>"; };
+		1DBD211B216FA1060073AB14 /* AmazonS3RequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestSerializer.swift; sourceTree = "<group>"; };
+		1DBD211C216FA1070073AB14 /* AmazonS3SignatureHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonS3SignatureHelpers.m; sourceTree = "<group>"; };
+		1DBD211E216FA1070073AB14 /* ResponseObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjects.swift; sourceTree = "<group>"; };
+		1DBD211F216FA1070073AB14 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		1DBD212A216FA7CC0073AB14 /* AmazonS3SignatureHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonS3SignatureHelpers.h; sourceTree = "<group>"; };
+		2232660C335773E1BA405BBC /* Pods-iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Tests/Pods-iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2ED7B18660D341BB1964CF43 /* Pods-iOS-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Example/Pods-iOS-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		42ED1C0C7E591FBEA515ED92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		45F9B2D1F79921F038F4D7EB /* Pods-TVOS-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOS-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVOS-Example/Pods-TVOS-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		48A6714CB1BBB222508C56BF /* Pods_TVOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEA1054E06EA6FE9B902262 /* Pods_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E02DA3F84F427E553A67D42 /* Pods-TVOS-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOS-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVOS-Example/Pods-TVOS-Example.release.xcconfig"; sourceTree = "<group>"; };
+		50CBC94FFD302A058978F9D6 /* Pods-AmazonS3RequestManager-JettF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3RequestManager-JettF.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3RequestManager-JettF/Pods-AmazonS3RequestManager-JettF.release.xcconfig"; sourceTree = "<group>"; };
+		5C97674BE6C54E0FF71E5DA4 /* Pods-iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Tests/Pods-iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E825B6BB0BA020993EF93FB /* Pods-OSX-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Tests/Pods-OSX-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager-JettF.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "AmazonS3RequestManager-JettF.podspec"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEF969FE3821DEAEC9F4F84 /* Pods-AmazonS3RequestManager-JettF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3RequestManager-JettF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3RequestManager-JettF/Pods-AmazonS3RequestManager-JettF.debug.xcconfig"; sourceTree = "<group>"; };
+		72D8C6930CD76EFE8BE5E754 /* Pods-OSX-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Tests/Pods-OSX-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		789D02D3106DB62639AE8792 /* Pods-OSX-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Example/Pods-OSX-Example.release.xcconfig"; sourceTree = "<group>"; };
+		7C86340C59403927DC7596FB /* Pods_OSX_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSX_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844A9BC8EC6D0892D79AA9D6 /* Pods-OSX-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Example/Pods-OSX-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		884ACA65B311A8F4DEF52C37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8B7556280E6D8AA659EA88DF /* Pods-TVOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVOS-Tests/Pods-TVOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8B7FB9F983BE505B46167557 /* Pods_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		928CAAB61E5CCDF0002D52A1 /* TVOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928CAACB1E5CCDFC002D52A1 /* TVOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TVOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928CAACC1E5CCDFC002D52A1 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		928CAAD01E5CCF9B002D52A1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		928CAAD11E5CCF9B002D52A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		928CAAD51E5CCF9B002D52A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		928CAADB1E5CD0B8002D52A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		928CAADD1E5CD163002D52A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A2B7061C51857200CA1967 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		92E8C3E81C4EF62300759119 /* AmazonS3RequestManager_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazonS3RequestManager_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		92E8C3E91C4EF62400759119 /* AmazonS3ACLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ACLTests.swift; sourceTree = "<group>"; };
+		92E8C3EA1C4EF62400759119 /* AmazonS3RequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestManagerTests.swift; sourceTree = "<group>"; };
+		92E8C3EB1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestSerializerTests.swift; sourceTree = "<group>"; };
+		92E8C3EC1C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ResponseSerializationTests.swift; sourceTree = "<group>"; };
+		92E8C40B1C4EFAC800759119 /* OSX-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSX-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E8C40D1C4EFAC900759119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92E8C40F1C4EFAC900759119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92E8C4111C4EFAC900759119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92E8C4141C4EFAC900759119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92E8C4161C4EFAC900759119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E8C42D1C4EFC6900759119 /* OSX-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C3DDFC20C2E6C0F26134B4 /* Pods_TVOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75A2AB88B9045E7E739A553 /* Pods_OSX_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSX_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C7D21640F029D8CBB9403D /* Pods_AmazonS3RequestManager_JettF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonS3RequestManager_JettF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB60E86E5E26A196521F36DB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3229E3E1C9D28D500848C84 /* AmazonS3ResponseObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ResponseObjectTests.swift; sourceTree = "<group>"; };
+		F3DD8F0E1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AmazonS3SignatureHelpersTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DBD210B216F9AA10073AB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424D46952F9E5F9CD3982C7 /* Pods_AmazonS3RequestManager_JettF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA01ADF1DC0931D5DF8432B /* Pods_iOS_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7711F3B40F41CDDF2FCAB186 /* Pods_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAAAC1E5CCDF0002D52A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654CE989194367150525F2B1 /* Pods_TVOS_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAAC31E5CCDFC002D52A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FE329FEB567CF5FA382043 /* Pods_TVOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C4081C4EFAC800759119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E421180E366A743FB107EE /* Pods_OSX_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C42A1C4EFC6900759119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720A5C57B07D8886E59746CC /* Pods_OSX_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DBD210F216F9AA10073AB14 /* AmazonS3RequestManager-JettF */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD2110216F9AA10073AB14 /* AmazonS3RequestManager_JettF.h */,
+				1DBD2117216FA1060073AB14 /* ACL.swift */,
+				1DBD212A216FA7CC0073AB14 /* AmazonS3SignatureHelpers.h */,
+				1DBD2119216FA1060073AB14 /* AmazonS3RequestManager.swift */,
+				1DBD211B216FA1060073AB14 /* AmazonS3RequestSerializer.swift */,
+				1DBD211C216FA1070073AB14 /* AmazonS3SignatureHelpers.m */,
+				1DBD211F216FA1070073AB14 /* Region.swift */,
+				1DBD211E216FA1070073AB14 /* ResponseObjects.swift */,
+				1DBD2116216FA1060073AB14 /* ResponseSerialization.swift */,
+				1DBD2118216FA1060073AB14 /* S3Error.swift */,
+				1DBD2111216F9AA20073AB14 /* Info.plist */,
+			);
+			path = "AmazonS3RequestManager-JettF";
+			sourceTree = "<group>";
+		};
+		2D4528D1A53632933074251A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF969FE3821DEAEC9F4F84 /* Pods-AmazonS3RequestManager-JettF.debug.xcconfig */,
+				50CBC94FFD302A058978F9D6 /* Pods-AmazonS3RequestManager-JettF.release.xcconfig */,
+				844A9BC8EC6D0892D79AA9D6 /* Pods-OSX-Example.debug.xcconfig */,
+				789D02D3106DB62639AE8792 /* Pods-OSX-Example.release.xcconfig */,
+				72D8C6930CD76EFE8BE5E754 /* Pods-OSX-Tests.debug.xcconfig */,
+				5E825B6BB0BA020993EF93FB /* Pods-OSX-Tests.release.xcconfig */,
+				45F9B2D1F79921F038F4D7EB /* Pods-TVOS-Example.debug.xcconfig */,
+				4E02DA3F84F427E553A67D42 /* Pods-TVOS-Example.release.xcconfig */,
+				1084293B527E120C7F6A4D0B /* Pods-TVOS-Tests.debug.xcconfig */,
+				8B7556280E6D8AA659EA88DF /* Pods-TVOS-Tests.release.xcconfig */,
+				2ED7B18660D341BB1964CF43 /* Pods-iOS-Example.debug.xcconfig */,
+				086B3919B490BDD32BB55ACD /* Pods-iOS-Example.release.xcconfig */,
+				2232660C335773E1BA405BBC /* Pods-iOS-Tests.debug.xcconfig */,
+				5C97674BE6C54E0FF71E5DA4 /* Pods-iOS-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		350C5ABD2FAA176057674C48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB60E86E5E26A196521F36DB /* Pods.framework */,
+				D7C7D21640F029D8CBB9403D /* Pods_AmazonS3RequestManager_JettF.framework */,
+				B75A2AB88B9045E7E739A553 /* Pods_OSX_Example.framework */,
+				7C86340C59403927DC7596FB /* Pods_OSX_Tests.framework */,
+				A3C3DDFC20C2E6C0F26134B4 /* Pods_TVOS_Example.framework */,
+				48A6714CB1BBB222508C56BF /* Pods_TVOS_Tests.framework */,
+				8B7FB9F983BE505B46167557 /* Pods_iOS_Example.framework */,
+				4DEA1054E06EA6FE9B902262 /* Pods_iOS_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				1DBD210F216F9AA10073AB14 /* AmazonS3RequestManager-JettF */,
+				607FACD21AFB9204008FA782 /* iOS-Example */,
+				92E8C40C1C4EFAC900759119 /* OSX-Example */,
+				928CAACF1E5CCF9B002D52A1 /* TVOS-Example */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				350C5ABD2FAA176057674C48 /* Frameworks */,
+				2D4528D1A53632933074251A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* iOS-Example.app */,
+				607FACE51AFB9204008FA782 /* iOS-Tests.xctest */,
+				92E8C40B1C4EFAC800759119 /* OSX-Example.app */,
+				92E8C42D1C4EFC6900759119 /* OSX-Tests.xctest */,
+				928CAAB61E5CCDF0002D52A1 /* TVOS-Example.app */,
+				928CAACB1E5CCDFC002D52A1 /* TVOS-Tests.xctest */,
+				1DBD210E216F9AA10073AB14 /* AmazonS3RequestManager_JettF.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* iOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				92A2B7061C51857200CA1967 /* Default-568h@2x.png */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			path = "iOS-Example";
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92E8C3E91C4EF62400759119 /* AmazonS3ACLTests.swift */,
+				92E8C3EA1C4EF62400759119 /* AmazonS3RequestManagerTests.swift */,
+				92E8C3EB1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift */,
+				92E8C3EC1C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+				92E8C3E81C4EF62300759119 /* AmazonS3RequestManager_Tests-Bridging-Header.h */,
+				F3229E3E1C9D28D500848C84 /* AmazonS3ResponseObjectTests.swift */,
+				F3DD8F0E1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5FDEE5E53EEC87745C3E8955 /* AmazonS3RequestManager-JettF.podspec */,
+				884ACA65B311A8F4DEF52C37 /* README.md */,
+				42ED1C0C7E591FBEA515ED92 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		928CAACF1E5CCF9B002D52A1 /* TVOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				928CAAD01E5CCF9B002D52A1 /* AppDelegate.swift */,
+				928CAAD11E5CCF9B002D52A1 /* Assets.xcassets */,
+				928CAAD51E5CCF9B002D52A1 /* ViewController.swift */,
+				928CAACC1E5CCDFC002D52A1 /* Tests-Info.plist */,
+				928CAADB1E5CD0B8002D52A1 /* Main.storyboard */,
+				928CAADD1E5CD163002D52A1 /* Info.plist */,
+			);
+			path = "TVOS-Example";
+			sourceTree = "<group>";
+		};
+		92E8C40C1C4EFAC900759119 /* OSX-Example */ = {
+			isa = PBXGroup;
+			children = (
+				92E8C40D1C4EFAC900759119 /* AppDelegate.swift */,
+				92E8C40F1C4EFAC900759119 /* ViewController.swift */,
+				92E8C4111C4EFAC900759119 /* Assets.xcassets */,
+				92E8C4131C4EFAC900759119 /* Main.storyboard */,
+				92E8C4161C4EFAC900759119 /* Info.plist */,
+			);
+			path = "OSX-Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DBD2109216F9AA10073AB14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBD2112216F9AA20073AB14 /* AmazonS3RequestManager_JettF.h in Headers */,
+				1DBD212B216FA7CC0073AB14 /* AmazonS3SignatureHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1DBD210D216F9AA10073AB14 /* AmazonS3RequestManager-JettF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD2113216F9AA20073AB14 /* Build configuration list for PBXNativeTarget "AmazonS3RequestManager-JettF" */;
+			buildPhases = (
+				5453A3EBA4C716852DA2D225 /* [CP] Check Pods Manifest.lock */,
+				1DBD2109216F9AA10073AB14 /* Headers */,
+				1DBD210A216F9AA10073AB14 /* Sources */,
+				1DBD210B216F9AA10073AB14 /* Frameworks */,
+				1DBD210C216F9AA10073AB14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AmazonS3RequestManager-JettF";
+			productName = "AmazonS3RequestManager-JettF";
+			productReference = 1DBD210E216F9AA10073AB14 /* AmazonS3RequestManager_JettF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		607FACCF1AFB9204008FA782 /* iOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iOS-Example" */;
+			buildPhases = (
+				548161F6CC5324DF732DCE1E /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				887326ABAA8F8CDF3B917267 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Example";
+			productName = AmazonS3RequestManager;
+			productReference = 607FACD01AFB9204008FA782 /* iOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* iOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iOS-Tests" */;
+			buildPhases = (
+				068CEE6E96EDD043C43C5D5F /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+				009BFBBB0158AA5E53672F86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = "iOS-Tests";
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* iOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		928CAAA71E5CCDF0002D52A1 /* TVOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928CAAB31E5CCDF0002D52A1 /* Build configuration list for PBXNativeTarget "TVOS-Example" */;
+			buildPhases = (
+				EEB2F687DD126F94A1F9B67C /* [CP] Check Pods Manifest.lock */,
+				928CAAA91E5CCDF0002D52A1 /* Sources */,
+				928CAAAC1E5CCDF0002D52A1 /* Frameworks */,
+				928CAAAE1E5CCDF0002D52A1 /* Resources */,
+				5F2B1BB5BE71CAAD2D34148E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TVOS-Example";
+			productName = "OSX-Example";
+			productReference = 928CAAB61E5CCDF0002D52A1 /* TVOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		928CAAB81E5CCDFC002D52A1 /* TVOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928CAAC81E5CCDFC002D52A1 /* Build configuration list for PBXNativeTarget "TVOS-Tests" */;
+			buildPhases = (
+				674278CA3147253344530F2C /* [CP] Check Pods Manifest.lock */,
+				928CAABC1E5CCDFC002D52A1 /* Sources */,
+				928CAAC31E5CCDFC002D52A1 /* Frameworks */,
+				928CAAC51E5CCDFC002D52A1 /* Resources */,
+				FD5B9956560759357EF18A88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				928CAACE1E5CCEEB002D52A1 /* PBXTargetDependency */,
+			);
+			name = "TVOS-Tests";
+			productName = "OSX-Tests";
+			productReference = 928CAACB1E5CCDFC002D52A1 /* TVOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92E8C40A1C4EFAC800759119 /* OSX-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E8C4171C4EFAC900759119 /* Build configuration list for PBXNativeTarget "OSX-Example" */;
+			buildPhases = (
+				D0610DA8F268D82ED2A32361 /* [CP] Check Pods Manifest.lock */,
+				92E8C4071C4EFAC800759119 /* Sources */,
+				92E8C4081C4EFAC800759119 /* Frameworks */,
+				92E8C4091C4EFAC800759119 /* Resources */,
+				37C38AD0EF5C1306633A3495 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSX-Example";
+			productName = "OSX-Example";
+			productReference = 92E8C40B1C4EFAC800759119 /* OSX-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92E8C42C1C4EFC6900759119 /* OSX-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E8C4341C4EFC6900759119 /* Build configuration list for PBXNativeTarget "OSX-Tests" */;
+			buildPhases = (
+				4C6D0B4A024A6CFB87100098 /* [CP] Check Pods Manifest.lock */,
+				92E8C4291C4EFC6900759119 /* Sources */,
+				92E8C42A1C4EFC6900759119 /* Frameworks */,
+				92E8C42B1C4EFC6900759119 /* Resources */,
+				A85996556354AEC25DA4B307 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E8C4331C4EFC6900759119 /* PBXTargetDependency */,
+			);
+			name = "OSX-Tests";
+			productName = "OSX-Tests";
+			productReference = 92E8C42D1C4EFC6900759119 /* OSX-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					1DBD210D216F9AA10073AB14 = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = MPP79TVT3F;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Manual;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					928CAAB81E5CCDFC002D52A1 = {
+						TestTargetID = 928CAAA71E5CCDF0002D52A1;
+					};
+					92E8C40A1C4EFAC800759119 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					92E8C42C1C4EFC6900759119 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						TestTargetID = 92E8C40A1C4EFAC800759119;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AmazonS3RequestManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DBD210D216F9AA10073AB14 /* AmazonS3RequestManager-JettF */,
+				607FACCF1AFB9204008FA782 /* iOS-Example */,
+				607FACE41AFB9204008FA782 /* iOS-Tests */,
+				92E8C40A1C4EFAC800759119 /* OSX-Example */,
+				92E8C42C1C4EFC6900759119 /* OSX-Tests */,
+				928CAAA71E5CCDF0002D52A1 /* TVOS-Example */,
+				928CAAB81E5CCDFC002D52A1 /* TVOS-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBD210C216F9AA10073AB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				92A2B7071C51857200CA1967 /* Default-568h@2x.png in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAAAE1E5CCDF0002D52A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928CAAD71E5CCF9B002D52A1 /* Assets.xcassets in Resources */,
+				928CAADC1E5CD0B8002D52A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAAC51E5CCDFC002D52A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C4091C4EFAC800759119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8C4121C4EFAC900759119 /* Assets.xcassets in Resources */,
+				92E8C4151C4EFAC900759119 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C42B1C4EFC6900759119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		009BFBBB0158AA5E53672F86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Tests/Pods-iOS-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-iOS/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nocilla-iOS/Nocilla.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nocilla.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Tests/Pods-iOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		068CEE6E96EDD043C43C5D5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C38AD0EF5C1306633A3495 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OSX-Example/Pods-OSX-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-macOS/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OSX-Example/Pods-OSX-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C6D0B4A024A6CFB87100098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OSX-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5453A3EBA4C716852DA2D225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazonS3RequestManager-JettF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		548161F6CC5324DF732DCE1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2B1BB5BE71CAAD2D34148E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TVOS-Example/Pods-TVOS-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-tvOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-tvOS/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVOS-Example/Pods-TVOS-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		674278CA3147253344530F2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		887326ABAA8F8CDF3B917267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Example/Pods-iOS-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-iOS/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Example/Pods-iOS-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85996556354AEC25DA4B307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OSX-Tests/Pods-OSX-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-macOS/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nocilla-macOS/Nocilla.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nocilla.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OSX-Tests/Pods-OSX-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0610DA8F268D82ED2A32361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OSX-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB2F687DD126F94A1F9B67C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVOS-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5B9956560759357EF18A88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TVOS-Tests/Pods-TVOS-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-tvOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-tvOS/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-tvOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nocilla-tvOS/Nocilla.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-tvOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nocilla.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVOS-Tests/Pods-TVOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBD210A216F9AA10073AB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBD2126216FA1070073AB14 /* AmazonS3SignatureHelpers.m in Sources */,
+				1DBD2125216FA1070073AB14 /* AmazonS3RequestSerializer.swift in Sources */,
+				1DBD2122216FA1070073AB14 /* S3Error.swift in Sources */,
+				1DBD2129216FA1070073AB14 /* Region.swift in Sources */,
+				1DBD2128216FA1070073AB14 /* ResponseObjects.swift in Sources */,
+				1DBD2121216FA1070073AB14 /* ACL.swift in Sources */,
+				1DBD2120216FA1070073AB14 /* ResponseSerialization.swift in Sources */,
+				1DBD2123216FA1070073AB14 /* AmazonS3RequestManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8C3EF1C4EF62400759119 /* AmazonS3RequestSerializerTests.swift in Sources */,
+				F3229E3F1C9D28D600848C84 /* AmazonS3ResponseObjectTests.swift in Sources */,
+				F3DD8F0F1CBD1036008E8EB4 /* AmazonS3SignatureHelpersTests.swift in Sources */,
+				92E8C3ED1C4EF62400759119 /* AmazonS3ACLTests.swift in Sources */,
+				92E8C3EE1C4EF62400759119 /* AmazonS3RequestManagerTests.swift in Sources */,
+				92E8C3F01C4EF62400759119 /* AmazonS3ResponseSerializationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAAA91E5CCDF0002D52A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928CAAD61E5CCF9B002D52A1 /* AppDelegate.swift in Sources */,
+				928CAADA1E5CCF9B002D52A1 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928CAABC1E5CCDFC002D52A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928CAABD1E5CCDFC002D52A1 /* AmazonS3ResponseSerializationTests.swift in Sources */,
+				928CAABE1E5CCDFC002D52A1 /* AmazonS3ResponseObjectTests.swift in Sources */,
+				928CAABF1E5CCDFC002D52A1 /* AmazonS3SignatureHelpersTests.swift in Sources */,
+				928CAAC01E5CCDFC002D52A1 /* AmazonS3ACLTests.swift in Sources */,
+				928CAAC11E5CCDFC002D52A1 /* AmazonS3RequestSerializerTests.swift in Sources */,
+				928CAAC21E5CCDFC002D52A1 /* AmazonS3RequestManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C4071C4EFAC800759119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8C4101C4EFAC900759119 /* ViewController.swift in Sources */,
+				92E8C40E1C4EFAC900759119 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8C4291C4EFC6900759119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8C43A1C4EFD4A00759119 /* AmazonS3ResponseSerializationTests.swift in Sources */,
+				F3229E401C9D28D600848C84 /* AmazonS3ResponseObjectTests.swift in Sources */,
+				F3DD8F101CBD103C008E8EB4 /* AmazonS3SignatureHelpersTests.swift in Sources */,
+				92E8C4371C4EFD4400759119 /* AmazonS3ACLTests.swift in Sources */,
+				92E8C4391C4EFD4800759119 /* AmazonS3RequestSerializerTests.swift in Sources */,
+				92E8C4381C4EFD4600759119 /* AmazonS3RequestManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* iOS-Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		928CAACE1E5CCEEB002D52A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 928CAAA71E5CCDF0002D52A1 /* TVOS-Example */;
+			targetProxy = 928CAACD1E5CCEEB002D52A1 /* PBXContainerItemProxy */;
+		};
+		92E8C4331C4EFC6900759119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92E8C40A1C4EFAC800759119 /* OSX-Example */;
+			targetProxy = 92E8C4321C4EFC6900759119 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDA1AFB9204008FA782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		92E8C4131C4EFAC900759119 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92E8C4141C4EFAC900759119 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD2114216F9AA20073AB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEF969FE3821DEAEC9F4F84 /* Pods-AmazonS3RequestManager-JettF.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MPP79TVT3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "AmazonS3RequestManager-JettF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jettfdev.AmazonS3RequestManager-JettF";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DBD2115216F9AA20073AB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CBC94FFD302A058978F9D6 /* Pods-AmazonS3RequestManager-JettF.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MPP79TVT3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "AmazonS3RequestManager-JettF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jettfdev.AmazonS3RequestManager-JettF";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED7B18660D341BB1964CF43 /* Pods-iOS-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "iOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086B3919B490BDD32BB55ACD /* Pods-iOS-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "iOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2232660C335773E1BA405BBC /* Pods-iOS-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/AmazonS3RequestManager_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Example.app/iOS-Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C97674BE6C54E0FF71E5DA4 /* Pods-iOS-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/AmazonS3RequestManager_Tests-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Example.app/iOS-Example";
+			};
+			name = Release;
+		};
+		928CAAB41E5CCDF0002D52A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F9B2D1F79921F038F4D7EB /* Pods-TVOS-Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "TVOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		928CAAB51E5CCDF0002D52A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E02DA3F84F427E553A67D42 /* Pods-TVOS-Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TVOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		928CAAC91E5CCDFC002D52A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1084293B527E120C7F6A4D0B /* Pods-TVOS-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "TVOS-Example/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos10.1;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVOS-Example.app/TVOS-Example";
+			};
+			name = Debug;
+		};
+		928CAACA1E5CCDFC002D52A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7556280E6D8AA659EA88DF /* Pods-TVOS-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TVOS-Example/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos10.1;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVOS-Example.app/TVOS-Example";
+			};
+			name = Release;
+		};
+		92E8C4181C4EFAC900759119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844A9BC8EC6D0892D79AA9D6 /* Pods-OSX-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "OSX-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		92E8C4191C4EFAC900759119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789D02D3106DB62639AE8792 /* Pods-OSX-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OSX-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		92E8C4351C4EFC6900759119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D8C6930CD76EFE8BE5E754 /* Pods-OSX-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Example.app/Contents/MacOS/OSX-Example";
+			};
+			name = Debug;
+		};
+		92E8C4361C4EFC6900759119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E825B6BB0BA020993EF93FB /* Pods-OSX-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthonymdev.OSX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Example.app/Contents/MacOS/OSX-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD2113216F9AA20073AB14 /* Build configuration list for PBXNativeTarget "AmazonS3RequestManager-JettF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD2114216F9AA20073AB14 /* Debug */,
+				1DBD2115216F9AA20073AB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AmazonS3RequestManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928CAAB31E5CCDF0002D52A1 /* Build configuration list for PBXNativeTarget "TVOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928CAAB41E5CCDF0002D52A1 /* Debug */,
+				928CAAB51E5CCDF0002D52A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928CAAC81E5CCDFC002D52A1 /* Build configuration list for PBXNativeTarget "TVOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928CAAC91E5CCDFC002D52A1 /* Debug */,
+				928CAACA1E5CCDFC002D52A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E8C4171C4EFAC900759119 /* Build configuration list for PBXNativeTarget "OSX-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E8C4181C4EFAC900759119 /* Debug */,
+				92E8C4191C4EFAC900759119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E8C4341C4EFC6900759119 /* Build configuration list for PBXNativeTarget "OSX-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E8C4351C4EFC6900759119 /* Debug */,
+				92E8C4361C4EFC6900759119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
