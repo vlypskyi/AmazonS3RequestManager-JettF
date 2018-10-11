@@ -11,7 +11,7 @@ import Nimble
 import Nocilla
 
 import Alamofire
-@testable import AmazonS3RequestManager
+@testable import AmazonS3RequestManager_JettF
 
 class AmazonS3RequestManagerTests: XCTestCase {
     

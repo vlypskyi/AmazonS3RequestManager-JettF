@@ -13,7 +13,7 @@ import Nimble
 import Alamofire
 import SWXMLHash
 
-@testable import AmazonS3RequestManager
+@testable import AmazonS3RequestManager_JettF
 
 class AmazonS3ResponseSerializationTests: XCTestCase {
     

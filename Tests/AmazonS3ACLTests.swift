@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 
-import AmazonS3RequestManager
+@testable import AmazonS3RequestManager_JettF
 
 class AmazonS3ACLSpec: QuickSpec {
     override func spec() {

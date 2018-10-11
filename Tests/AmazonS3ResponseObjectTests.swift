@@ -10,7 +10,7 @@ import XCTest
 import Nimble
 import Alamofire
 
-@testable import AmazonS3RequestManager
+@testable import AmazonS3RequestManager_JettF
 
 class AmazonS3ResponseObjectTests: XCTestCase {
     
