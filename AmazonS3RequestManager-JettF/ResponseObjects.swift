@@ -52,6 +52,9 @@ public final class S3BucketObjectList: ResponseObjectSerializable {
     public var bucket: String?
     public var truncated: Bool?
     public var maxKeys: Int?
+    public var prefix: String?
+    public var delimiter: String?
+    public var commonPrefixes: [String] = []
     
     public init?(response: HTTPURLResponse, representation xml: XMLIndexer) {
         bucket = xml["ListBucketResult"]["Name"].element?.text
@@ -64,7 +67,13 @@ public final class S3BucketObjectList: ResponseObjectSerializable {
             maxKeys = Int(maximumKeys)
         }
         
+        prefix = xml["ListBucketResult"]["Prefix"].element?.text
+        
+        delimiter = xml["ListBucketResult"]["Delimiter"].element?.text
+        
         parseContents(xml["ListBucketResult"]["Contents"])
+        
+        parseCommonPrefixes(xml["ListBucketResult"]["CommonPrefixes"])
     }
     
     fileprivate func parseContents(_ xml: XMLIndexer) {
@@ -73,6 +82,10 @@ public final class S3BucketObjectList: ResponseObjectSerializable {
                 files.append(file)
             }
         }
+    }
+    
+    fileprivate func parseCommonPrefixes(_ xml: XMLIndexer) {
+        commonPrefixes = xml.all.compactMap { $0["Prefix"].element?.text }
     }
     
     fileprivate func parseFile(_ xml: XMLIndexer) -> S3File? {
